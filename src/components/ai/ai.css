@@ -1,0 +1,45 @@
+.bg-dot-pattern {
+  background-image: radial-gradient(
+    circle at center,
+    rgb(var(--muted) / 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}
+
+.message-content p {
+  @apply text-sm leading-relaxed mb-2;
+}
+
+.message-content ul {
+  @apply list-disc pl-4 mb-2 text-sm;
+}
+
+.message-content ol {
+  @apply list-decimal pl-4 mb-2 text-sm;
+}
+
+.message-content li {
+  @apply mb-1;
+}
+
+.message-content strong {
+  @apply font-bold text-primary dark:text-primary;
+}
+
+.message-content em {
+  @apply italic text-primary/80 dark:text-primary/80;
+}
+
+.message-content a {
+  @apply text-primary underline hover:text-primary/80;
+}
+
+/* Emoji styles */
+.message-content :is(p, li) img[alt*="emoji"] {
+  @apply inline-block align-middle;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}

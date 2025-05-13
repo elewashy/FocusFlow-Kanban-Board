@@ -1,0 +1,16 @@
+[data-rbd-draggable-context-id] {
+  transition: transform 0.2s ease;
+}
+
+[data-rbd-drag-handle-draggable-id] {
+  cursor: grab;
+}
+
+.dragging {
+  cursor: grabbing !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-rbd-draggable-id] {
+  transform-origin: 50% 50%;
+}
